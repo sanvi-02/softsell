@@ -1,0 +1,63 @@
+
+.achievement-section {
+  background-color: #d2f7d2;
+  padding: 40px 20px;
+  color: #004d40; 
+}
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #004d40;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.faq-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #004d40;
+  font-family: 'Times New Roman', Times, serif;
+}
+.accordion {
+  background-color: transparent;
+  font-size: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.accordion-item {
+  background-color: white;
+  border: 1px solid #b0e7b0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  background-color: #b0e7b0; 
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #007b55; 
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #d2f7d2;
+  color: #004d40;
+}
+
+.accordion-body {
+  background-color: #f0fff0; 
+  color: #004d40;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1rem 1.5rem;
+  line-height: 1.6;
+}

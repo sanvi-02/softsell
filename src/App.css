@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+.app-container{
+  min-height: 100vh;
+  width:100vw;
+}
+.whole{
+  width:100vw;
+}
+.hero{
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #d2f7d2;
+}
+.hero-content{
+  display: grid;
+  grid-template-columns: 80% 30%;
+}
+.text-content{
+  padding-top: 60px;
+}
+.hero h1{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero button{
+  background-color: #fff;
+  color:#d2f7d2;
+  border: none;
+  padding : 10px 20px;
+  cursor:pointer;
+  font-weight: bold;
+}
+.horizontal-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 220px;
+}
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 0.9rem;
+  color: #666;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1rem;
+  background-color: #d2f7d2;
+}
+
+.form textarea {
+  resize: vertical;
+  height: 100px;
+  color: #333;
+}
+
+.form button {
+  background-color:#007b55;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  background-color: #d2f7d2;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.step:hover {
+    transform: translateY(-15px) rotateX(8deg) rotateY(30deg) scale(1.07);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.icon-circle {
+  background-color: #d2f7d2;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+}
+.phone img {
+  width: 100%;
+  max-width: 300px;
+  animation: slideEnlargeShrink 1.2s ease-out forwards;
+  opacity: 0; 
+}
+
+@keyframes slideEnlargeShrink {
+  0% {
+    transform: translateX(-100px) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.phone {
+  transform: translateX(20px);
+  width: 20vw;
+}
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: fadeInLeft 1s ease forwards;
+}
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.pop-up {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pricing-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.pricing-card.popular {
+  border: 2px solid #007bff;
+  background-color: #e6f0ff;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007b55;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  color: #222;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
+  color: #444;
+}
+
+.pricing-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.pricing-card ul li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card button {
+  background-color: #007b55;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 900px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+.dark-mode {
+  background-color: #000000;
+  color: #D7FC00;
+}
+
+.dark-mode * {
+  background-color: transparent;
+  color: inherit;
+}
+
+.dark-mode .section,
+.dark-mode .container,
+.dark-mode .content,
+.dark-mode .hero,
+.dark-mode .features,
+.dark-mode .how-it-works,
+.dark-mode .why-choose-us {
+  background-color: #000000;
+  color: #D7FC00;
+}
+
+.dark-mode .card,
+.dark-mode .info-box,
+.dark-mode .pricing-card,
+.dark-mode .feature-item,
+.dark-mode .step,
+.dark-mode .box {
+  background-color: #111111;
+  color: #D7FC00;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode strong {
+  color: #D7FC00;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #111;
+  color: #D7FC00;
+  border: 1px solid #444;
+}
+
+.dark-mode button,
+.dark-mode .button {
+  background-color: #222;
+  color: #D7FC00;
+  border: 1px solid #D7FC00;
+}
+
+.dark-mode button:hover,
+.dark-mode .button:hover {
+  background-color: #333;
+}
+
+.dark-mode .label,
+.dark-mode .badge,
+.dark-mode .tag {
+  background-color: #222;
+  color: #D7FC00;
+}
+.dark-mode .green-box {
+  background-color: #d2f7d2; 
+  color: #000;
+}
+
+.dark-mode * {
+  transition: all 0.3s ease-in-out;
+}
+.dark-mode-toggle {
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin: 20px;
+}
+.dark-mode-toggle:hover {
+  background-color: darkgreen;
+}
+.fade-in-left.delay-2 {
+  background-color: green;
+  color: white;
+}
+

@@ -1,0 +1,29 @@
+.contact-container {
+  background: #d2f7d2;
+  color: #007b55;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info {
+  margin: 10px;
+}
+
+.social-icons a {
+  color: #007b55;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color:black ;
+}
+

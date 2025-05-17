@@ -1,0 +1,19 @@
+
+.navbar {
+  background-color: #d2f7d2 !important; 
+}
+.navbar-nav .nav-link {
+  color: black !important; 
+}
+
+.navbar-nav .nav-link.active {
+  color: black !important; 
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color:#007b55 !important; 
+  transition: color 0.3s ease;
+}
+.logo {
+  width: 70px;
+  height: auto;
+}
